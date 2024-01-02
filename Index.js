@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 app.use(express.json());
-const products = ["Laptop", "LCD", "Mobile"];
+const products=["AHMAD NAEEM ", " HAIDER ALI " ,"USMAN CHEMMA ", " HUSNAIN SHAH " ,"AHMAD KHOKHAR ", " ABU-BAKAR JUTT ","HASSAN HABIB", "BILAL LIAQUAT ","ABDULLAH SHEIKH"," ASIM USMAN","SAHIL WASEEM","DOCTOR FARRUKH RIZWAN"]
 
 app.get("/", function (req, res) {
   res.send("Hello World");
