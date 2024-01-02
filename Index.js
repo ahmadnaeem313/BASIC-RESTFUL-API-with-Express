@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-app.use(express.json());
+app.use(express.json());//milderware 
 const products=["AHMAD NAEEM ", " HAIDER ALI " ,"USMAN CHEMMA ", " HUSNAIN SHAH " ,"AHMAD KHOKHAR ", " ABU-BAKAR JUTT ","HASSAN HABIB", "BILAL LIAQUAT ","ABDULLAH SHEIKH"," ASIM USMAN","SAHIL WASEEM","DOCTOR FARRUKH RIZWAN"]
 
 app.get("/", function (req, res) {
@@ -9,7 +9,6 @@ app.get("/", function (req, res) {
 app.get("/api/search", function (req, res) {
   res.send("API Search");
 });
-
 //first parameter is url
 //second is a function with two inputs one is request and one is response
 app.get("/api/products", function (req, res) {
